@@ -17,11 +17,11 @@
             <ul class="flex flex-col md:flex-row items-center">
                 <li>
                     <i class="fa fa-video-camera mx-2" aria-hidden="true"></i>
-                    <a href="#">MovieApp</a>
+                    <a href="{{ route('movies.index') }}">MovieApp</a>
                 </li>
 
                 <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Movies</a>
+                    <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
                     <a href="#" class="hover:text-gray-300">TV Shows</a>

@@ -8,6 +8,8 @@
     <title>Movie App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/app.css">
+    @livewireStyles
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 
 </head>
 
@@ -32,14 +34,8 @@
             </ul>
 
             <div class="flex flex-col md:flex-row items-center">
-                <div class="relative mt-3 md:mt-0">
-                    <input type="text"
-                        class="bg-gray-700 rounded-full w-64 text-sm px-4 py-1 focus:outline-none focus:shadow-outline"
-                        placeholder="Search">
-                    <div class="absolute top-0 right-3">
-                        <i class="fa fa-search fil-current text-gray-300 w-4" aria-hidden="true"></i>
-                    </div>
-                </div>
+
+                <livewire:search-dropdown />
 
                 <div class="md:ml-4 mt-3 md:mt-0">
                     <a href="#">
@@ -52,6 +48,9 @@
 
 
     @yield('content')
+
+    <livewire:scripts>
+
 </body>
 
 </html>
